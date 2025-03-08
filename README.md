@@ -4,7 +4,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-red)](https://pytorch.org/)
 [![PyTorch Geometric](https://img.shields.io/badge/PyG-2.0%2B-orange)](https://pytorch-geometric.readthedocs.io/)
 
-A sophisticated fraud detection system that leverages Graph Neural Networks to identify suspicious transactions in real-time by analyzing transaction patterns and network structures.
+A sophisticated fraud detection system that leverages Graph Neural Networks to identify suspicious transactions by analyzing transaction patterns and network structures.
 
 ## Overview
 
