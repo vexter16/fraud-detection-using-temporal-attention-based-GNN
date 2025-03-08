@@ -8,7 +8,7 @@ A sophisticated fraud detection system that leverages Graph Neural Networks to i
 
 ## Overview
 
-This project implements a cutting-edge fraud detection system that models financial transactions as a graph, where accounts are represented as nodes and transactions as edges. By applying Graph Neural Networks (GNNs) to this transaction graph, the system can:
+This project implements a fraud detection system that models financial transactions as a graph, where accounts are represented as nodes and transactions as edges. By applying Graph Neural Networks (GNNs) to this transaction graph, the system can:
 
 - Detect fraudulent transactions in real-time
 - Explain why a transaction was flagged as suspicious
@@ -20,7 +20,7 @@ The system utilizes temporal graph attention networks to capture both the struct
 ## Key Features
 
 - **Graph-based Fraud Detection**: Models the financial transaction network as a graph to capture complex relationships between accounts
-- **Real-time Processing**: Analyzes transactions as they occur with millisecond-level latency
+- **Real-time Processing**: Analyzes transactions with millisecond-level latency
 - **Explainable AI**: Provides detailed explanations for why a transaction was flagged as suspicious
 - **Interactive Visualizations**: Offers graph-based visualizations of suspicious transaction patterns
 - **Temporal Pattern Recognition**: Captures time-dependent fraud patterns using temporal attention mechanisms
@@ -65,9 +65,7 @@ The system follows a layered architecture:
 2. **Graph Processing Layer**: Maintains the dynamic transaction graph
 3. **Detection Layer**: Applies GNN models to identify suspicious patterns
 4. **Explanation Layer**: Generates interpretable explanations for flagged transactions
-5. **API Layer**: Provides interfaces for integration with banking systems
 
-![System Architecture](./docs/images/system_architecture.png)
 
 ## Performance Comparison
 
@@ -99,7 +97,7 @@ Primary factors:
 
 ## Deployment Options
 
-The system can be deployed in multiple ways:
+The system could be deployed in multiple ways:
 
 - **Standalone API**: FastAPI-based service with Prometheus metrics
 - **Docker Containers**: Full containerization with Docker Compose
@@ -130,26 +128,7 @@ The system has been applied successfully to:
 - **Insurance Claim Fraud**: Identifying networks of related fraudulent claims
 - **Cryptocurrency Transaction Monitoring**: Detecting suspicious patterns in blockchain networks
 
-## Contributing
 
-Contributions to improve the system are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## Citation
-
-If you use this system in your research or project, please cite:
-
-```
-@software{graph_fraud_detection,
-  author = {Real-time Fraud Detection Team},
-  title = {Graph Neural Network-based Fraud Detection System},
-  year = {2023},
-  url = {https://github.com/yourusername/graph-fraud-detection}
-}
-```
 
 ## Getting Started
 
@@ -165,8 +144,8 @@ If you use this system in your research or project, please cite:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/graph-fraud-detection.git
-cd graph-fraud-detection
+git clone https://github.com/vexter16/fraud-detection-using-temporal-attention-based-GNN.git
+cd fraud-detection-using-temporal-attention-based-GNN
 ```
 
 2. Install dependencies:
@@ -190,23 +169,23 @@ python main.py generate_data --records 200 --output_dir data/
 #### Train a Model
 
 ```bash
-python main.py train --synthetic --records 200 --model_type temporal_gnn --epochs 25 --visualize
+python main.py train --synthetic --records 200 --model_type enhanced_temporal_gnn --epochs 50 --visualize
 ```
 
 #### Run Interactive Demo
 
 ```bash
-python demo.py --model_path models/saved/temporal_gnn_[timestamp].pt
+python demo.py --model_path models/saved/enhanced_temporal_gnn_[timestamp].pt
 ```
 
 #### Evaluate a Trained Model
 
 ```bash
-python main.py evaluate --model_path models/saved/temporal_gnn_[timestamp].pt --visualize
+python main.py evaluate --model_path models/saved/enhanced_temporal_gnn_[timestamp].pt --visualize
 ```
 
 #### Process Transactions
 
 ```bash
-python main.py process_transactions --model_path models/saved/temporal_gnn_[timestamp].pt --data_path data/transactions_to_process.csv
+python main.py process_transactions --model_path models/saved/enhanced_temporal_gnn_[timestamp].pt --data_path data/transactions_to_process.csv
 ```
